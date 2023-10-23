@@ -13,6 +13,7 @@ on:
 
 env: 
   string: 'my string'
+  newline: \n
 
 jobs:
   some-job:
@@ -24,4 +25,4 @@ jobs:
         run: |
           echo $fmt
         env: 
-          fmt: ${{ format('some multiline {0} {1}', '\\n', env.string) }}
+          fmt: ${{ format('some multiline {0} {1}', env.newline, env.string) }}
