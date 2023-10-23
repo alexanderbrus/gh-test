@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 2
     steps:
-      format: 
+      - name: format
         run: |
           echo $fmt
         env: 
