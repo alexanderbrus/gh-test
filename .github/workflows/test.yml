@@ -15,7 +15,7 @@ env:
   string: 'my string'
 
 jobs:
-  run:
+  some-job:
     name: testing
     runs-on: ubuntu-latest
     timeout-minutes: 2
